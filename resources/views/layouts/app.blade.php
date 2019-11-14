@@ -22,7 +22,7 @@
 <body>
     <h5 class="text-center">BIENVENIDO</h5>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-primary">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -36,7 +36,7 @@
                     <ul class="navbar-nav mr-auto">
                         @guest
                         @else                        
-                            <a class="nav-item nav-link" href="">Usuario</a>
+                            <a class="nav-item nav-link" href="{{ route('usuario') }}">Usuario</a>
                             <a class="nav-item nav-link" href="">Item</a>
                             <a class="nav-item nav-link" href="">Ingreso</a>
                             <a class="nav-item nav-link" href="">Egreso</a>
